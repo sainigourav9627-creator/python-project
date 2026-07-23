@@ -1,17 +1,19 @@
 print("\n------ATM System--------")
 atm_pin = 1234
+balance=10000 
 entered_pin = int(input("Enter PIN: "))
 
+
 if entered_pin==atm_pin:
-   print("Welcome")
+   print("welcome")
    print("\n------ATM Menu--------")
    print("1. Check Balance")
    print("2. Deposit")
-   print("3. Withdraw")
+   print("3. withdraw")
    print("4. Exit")
    
    choice = int(input("Enter your choice:"))
-   balance=10000 
+
    if choice==1:
      print("Current Balance:", balance)
   
@@ -21,9 +23,9 @@ if entered_pin==atm_pin:
     print("Current Balance:", balance)
    
    elif choice==3:
-    Withdraw=int(input("enter the Withdraw:"))
-    if Withdraw<= balance:
-       balance = balance - Withdraw
+    withdraw=int(input("enter the withdraw:"))
+    if withdraw<= balance:
+       balance = balance - withdraw
        print("Current Balance:", balance)
     else:
         print("Insufficient Balance")

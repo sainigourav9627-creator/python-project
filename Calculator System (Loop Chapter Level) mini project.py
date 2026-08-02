@@ -1,0 +1,43 @@
+print("==============  Calculator  ==========")
+a=int(input("\nEnter the first number:"))
+b=int(input("Enter the second  number:"))
+print("\n1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Exit")
+choice=int(input("\nEnter the choice:"))
+if choice==1:
+  print("\nAddition=",a+b)
+elif choice==2:
+  print("\nSubtraction=",a-b)
+elif choice==3:
+  print("\nMultiplication=",a*b)
+elif choice==4:
+  print("\nDivision=",a/b)
+elif choice==5:
+  print("\nExit")
+else:
+  print("Invalid Choice")
+
+
+Sirf 2 improvements
+1. Division by Zero
+
+Agar user:
+
+a = 10
+b = 0
+choice = 4
+
+to program error dega.
+
+Baad me hum ise handle karenge.
+
+2. Exit
+
+Abhi:
+
+elif choice == 5:
+    print("Exit")
+  

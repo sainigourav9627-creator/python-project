@@ -31,3 +31,21 @@ while play == "yes":
     play = input("Play Again? yes/no: ")
 
 print("Thanks for Playing")
+
+
+
+or 
+
+
+
+
+import random
+
+secret_number = random.randint(1,10)
+
+guess = int(input("Enter Guess: "))
+
+if guess == secret_number:
+    print("You Win")
+else:
+    print("You Lose")

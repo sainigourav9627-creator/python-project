@@ -1,18 +1,33 @@
 import random
 
-secret_number = random.randint(1,10)
+play = "yes"
 
-attempt = 0
+while play == "yes":
 
-while True:
-    guess = int(input("Enter the guess number: "))
-    
-    attempt = attempt + 1
-    
-    if guess == secret_number:
-        print("You Win")
-        break
+    secret_number = random.randint(1,10)
+
+    attempt = 0
+
+    while attempt < 5:
+        guess = int(input("Enter the guess number: "))
+
+        attempt = attempt + 1
+
+        if guess == secret_number:
+            print("You Win")
+            print("Total Attempts:", attempt)
+            break
+
+        elif guess < secret_number:
+            print("Number is too small")
+
+        else:
+            print("Number is too high")
+
     else:
-        print("Wrong Guess")
+        print("Game Over")
+        print("Secret Number was:", secret_number)
 
-print("Total Attempts :", attempt)
+    play = input("Play Again? yes/no: ")
+
+print("Thanks for Playing")

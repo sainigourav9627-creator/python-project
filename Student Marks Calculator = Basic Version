@@ -1,0 +1,46 @@
+def student_marks():
+    
+    hindi=int(input("enter Hindi Marks:     "))
+    english=int(input("enter English Marks:   "))
+    python=int(input("enter Python Marks:    "))
+    
+    print("\nHindi:       ", hindi)
+    print("English:     ", english)
+    print("Python:      ",python)
+    
+    total=hindi+english+python
+    print("Total: ",total)
+
+    
+    
+    Percentage = total / 300 * 100
+    print("Percentage: ", Percentage)
+
+    if Percentage >= 90:
+          Grade = "A+"
+
+    elif Percentage >= 80:
+          Grade = "A"
+    
+    elif Percentage >= 70:
+          Grade = "B"
+
+    elif Percentage >= 60:
+          Grade = "C"
+
+    elif Percentage >= 50:
+          Grade = "D"
+    else:
+          Grade = "F"
+    print("Grade: ",Grade)
+
+    if Percentage >=50:
+        print("pass")
+    else:
+        print("Fail")
+    
+    return total
+
+total = student_marks()
+print("Returned Total:", total)
+

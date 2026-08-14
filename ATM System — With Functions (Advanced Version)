@@ -1,0 +1,89 @@
+balance=5000
+def check_pin():
+    entered_pin = int(input("Enter the PIN: "))
+
+    if entered_pin == 1234:
+        print("PIN Verified")
+        return True
+    else:
+        print("Wrong PIN")
+        return False
+pin = check_pin()
+
+def atm_menu():
+    print("\n1. Check Balance")
+    print("2. Withdraw")
+    print("3. Deposit")
+    print("4. Exit")
+
+def check_balance():
+    print("Current Balance=",balance)
+
+
+def withdraw():
+    global balance
+   
+    amount = int(input("Enter the withdraw: "))
+    if amount <= balance:
+        balance = balance - amount
+        print("Balance = ",balance)
+        print("Withdrawal Successful")
+    else:
+        print("Insufficient Balance")
+
+def deposit():
+    global balance
+    
+    deposit_amount=int(input("enter the deposit: "))
+    balance = balance + deposit_amount
+    print("Amount =", balance)
+    print("deposit Successful")
+
+if pin:
+ while True:
+    atm_menu()
+    choice = int(input("\nEnter choice: "))
+
+    if choice == 1:
+        check_balance()
+
+    elif choice == 2:
+        withdraw()
+
+    elif choice == 3:
+        deposit()
+
+    elif choice == 4:
+        print("Exit")
+        break
+
+    else:
+        print("Invalid Choice")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    

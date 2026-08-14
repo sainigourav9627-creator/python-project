@@ -1,0 +1,48 @@
+Concepts: Functions + Parameters + Function Calling + if/elif/else + while + break
+
+def add(a, b):
+    print("Addition =", a + b)
+
+def subtract(a, b):
+    print("Subtraction =", a - b)
+
+def multiply(a, b):
+    print("Multiplication =", a * b)
+
+def divide(a, b):
+    print("Division =", a / b)
+
+while True:
+ choice = int(input("\nenter the choice: "))
+ 
+ if choice == 1:
+    a = int(input("\nEnter first number: "))
+    b = int(input("Enter second number: "))
+    add(a,b)
+ 
+ 
+ elif choice == 2:
+    a = int(input("\nEnter first number: "))
+    b = int(input("Enter second number: "))
+    subtract(a, b)
+ 
+ 
+ elif choice == 3:
+    a = int(input("\nEnter first number: "))
+    b = int(input("Enter second number: "))
+    multiply(a, b)
+ 
+ 
+ elif choice == 4:
+    a = int(input("\nEnter first number: "))
+    b = int(input("Enter second number: "))
+    divide(a, b)
+ 
+ 
+ elif choice == 5:
+    print("Exit")
+    break
+ 
+ 
+ else:
+   print("Invalid choice")

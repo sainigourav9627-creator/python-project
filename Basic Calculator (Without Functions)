@@ -1,22 +1,33 @@
+Concepts: input + if/elif/else
+
 print("==============  Calculator  ==========")
+
 a=int(input("\nEnter the first number:"))
 b=int(input("Enter the second  number:"))
+
 print("\n1. Addition")
 print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
 print("5. Exit")
+
 choice=int(input("\nEnter the choice:"))
+
 if choice==1:
   print("\nAddition=",a+b)
+
 elif choice==2:
   print("\nSubtraction=",a-b)
+
 elif choice==3:
   print("\nMultiplication=",a*b)
+
 elif choice==4:
   print("\nDivision=",a/b)
+
 elif choice==5:
   print("\nExit")
+
 else:
   print("Invalid Choice")
 

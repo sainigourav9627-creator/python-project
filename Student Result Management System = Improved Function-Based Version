@@ -1,0 +1,61 @@
+def student_name():
+    name = input("Enter student name: ")
+    return name
+
+
+def student_marks():
+    hindi = int(input("Enter Hindi Marks: "))
+    english = int(input("Enter English Marks: "))
+    python = int(input("Enter Python Marks: "))
+
+    total = hindi + english + python
+    return total
+
+
+def calculate_percentage(total):
+    percentage = total / 300 * 100
+    return percentage
+
+
+def calculate_grade(percentage):
+    if percentage >= 90:
+        grade = "A+"
+    elif percentage >= 80:
+        grade = "A"
+    elif percentage >= 70:
+        grade = "B"
+    elif percentage >= 60:
+        grade = "C"
+    elif percentage >= 50:
+        grade = "D"
+    else:
+        grade = "F"
+
+    return grade
+
+
+def check_result(percentage):
+    if percentage >= 50:
+        result = "Pass"
+    else:
+        result = "Fail"
+
+    return result
+
+
+# Functions को connect करना
+name = student_name()
+total = student_marks()
+
+percentage = calculate_percentage(total)
+grade = calculate_grade(percentage)
+result = check_result(percentage)
+
+
+# Final Result
+print("\n========== Student Result ==========")
+print("Student Name:", name)
+print("Total:", total)
+print("Percentage:", percentage)
+print("Grade:", grade)
+print("Result:", result)

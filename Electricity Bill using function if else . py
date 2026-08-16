@@ -1,0 +1,18 @@
+def electricity_bill():
+    name = input("enter customer name : ")
+    units = int(input("enter the units : "))
+    
+    print("\nCustomer = ", name)
+    print("Units = " , units)
+    
+    if units <= 100:
+        return units * 5
+    
+    elif units <= 200:
+        return units * 7
+
+    else :
+        return units * 10
+
+result = electricity_bill()
+print("Electricity Bil = " , result)

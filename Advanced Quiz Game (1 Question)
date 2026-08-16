@@ -1,0 +1,28 @@
+def quiz(question, a, b, c, d, correct):
+    print(question)
+    print("A.", a)
+    print("B.", b)
+    print("C.", c)
+    print("D.", d)
+
+    answer = input("Enter your answer: ").upper()
+
+    if answer == correct:
+        score = 1
+    else:
+        score = 0
+
+    return score
+
+
+result = quiz(
+    "What is 2 + 3?",
+    "4",
+    "5",
+    "6",
+    "7",
+    "B"
+)
+
+
+print("Score =", result)

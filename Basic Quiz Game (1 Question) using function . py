@@ -1,0 +1,16 @@
+def quiz(answer):
+    print("A. 4")
+    print("B. 5")
+    print("C. 6")
+    print("D. 7")
+
+    if answer == "B":
+        score = 1
+    else:
+        score = 0
+
+    return score
+
+answer = input("Enter your answer: ").upper()
+result = quiz(answer)
+print("Score =", result)

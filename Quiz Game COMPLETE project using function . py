@@ -1,0 +1,115 @@
+
+def quiz():
+    print("\n============== Quiz Game ==================")
+    
+    score = 0
+    
+    print("\nQ1. Python किसने बनाई?")
+    
+    print("\nA. Dennis Ritchie")
+    print("B. Guido van Rossum ")
+    print("C. James Gosling ")
+    print("D. Elon Musk ")
+
+    answer = input("\nEnter the answer: ").upper()
+
+    if answer == "B":
+        print("correct")
+        score = score + 1
+        print("Score = " , score)
+    else:
+        print("Wrong")
+
+    
+    
+    print("\nQ2. Python में function बनाने के लिए कौन-सा keyword use होता है?")
+    
+    print("\nA. function")
+    print("B. define")
+    print("C. def")
+    print("D. fun")
+
+    answer = input("\nEnter the answer: ").upper()
+
+    if answer == "C":
+        print("correct")
+        score = score + 1
+        print("Score = " , score)
+    else:
+        print("Wrong")
+
+
+    
+    print("\nQ3. Python में list बनाने के लिए कौन-से brackets use होते हैं? ")
+    
+    print("\nA. ( ) ")
+    print("B. [ ] ")
+    print("C. { } ")
+    print("D. < > ")
+
+    answer = input("\nEnter the answer: ").upper()
+
+    if answer == "B":
+        print("correct")
+        score = score + 1
+        print("Score = " , score)
+    else:
+        print("Wrong")
+
+
+    
+    print("\nQ4. Python में loop के लिए कौन-सा keyword use होता है?")
+    
+    print("\nA. repeat")
+    print("B. loop")
+    print("C. for ")
+    print("D. again ")
+
+    answer = input("\nEnter the answer: ").upper()
+
+    if answer == "C":
+        print("correct")
+        score = score + 1
+        print("Score = " , score)
+    else:
+        print("Wrong")
+
+
+   
+    print("\nQ5. input() function क्या करता है?")
+    
+    print("\nA.   Output दिखाता है ")
+    print("B.   User से input लेता है ")
+    print("C.   Function बनाता है ")
+    print("D. . Loop चलाता है ")
+
+    answer = input("\nEnter the answer: ").upper()
+
+    if answer == "B":
+        print("correct")
+        score = score + 1
+        print("Score = " , score)
+    else:
+        print("Wrong")
+
+    
+    print("\nFinal Score =", score)
+    
+    
+    if score == 5:
+      print(" Excellent! ")
+    elif score == 4:
+      print(" Very Good! ")
+    elif score == 3:
+      print(" Good! ")
+    else:
+      print(" Keep Practicing! ")
+    
+
+while True:
+    quiz()
+
+    choice = input("\nDo you want to play again? (Y/N): ").upper()
+
+    if choice == "N":
+        break

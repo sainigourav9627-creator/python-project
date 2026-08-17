@@ -1,0 +1,26 @@
+def login():
+    correct_username = "admin"
+    correct_password = "1234"
+
+    login_success = False
+
+    for attempt in range(3):
+  
+    
+        username = input("enter the username : ")
+        password = input("enter the password : ")
+    
+        if username == correct_username and   password == correct_password :
+        
+          print("\nLogin Successful")
+          login_success = True
+          break
+    
+    
+        else:
+          print("\nInvalid Username or Password")
+
+    if login_success == False:
+      print("Account Locked")
+
+login()

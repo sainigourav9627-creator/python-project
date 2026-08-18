@@ -1,0 +1,52 @@
+def matrix_operations():
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+    # Matrix Total
+    total = 0
+
+    for row in matrix:
+        for value in row:
+            total = total + value
+
+    print("\nMatrix Total =", total)
+
+    # Row Sum
+    for row in matrix:
+        total = 0
+
+        for value in row:
+            total = total + value
+
+        print("\nRow Sum =", total)
+
+    # Column Sum
+    for column in range(len(matrix[0])):
+        total = 0
+
+        for row in range(len(matrix)):
+            total = total + matrix[row][column]
+
+        print("\nColumn Sum =", total)
+
+    # Diagonal Sum
+    total = 0
+
+    for i in range(len(matrix)):
+        total = total + matrix[i][i]
+
+    print("\nDiagonal Sum =", total)
+
+
+    #  Secondary Diagonal Sum
+    total = 0
+
+    for i in range(len(matrix)):
+        total = total + matrix[i][i]
+
+    print("\nSecondary diagonal Sum =", total)
+
+matrix_operations()
